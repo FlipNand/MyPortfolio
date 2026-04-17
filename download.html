@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download MRKT | Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --apple-blue: #0071e3; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background-color: #000; color: #f5f5f7; }
+        .sf-pro { letter-spacing: -0.022em; }
+        .apple-card { background: #111112; border: 1px solid #222224; }
+        .btn-apple { background: var(--apple-blue); transition: all 0.2s ease; }
+        .btn-apple:hover { opacity: 0.9; transform: scale(0.98); }
+        
+        /* Smooth Page Transitions */
+        main { animation: appleSlide 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+        @keyframes appleSlide { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="sf-pro">
+
+    <nav class="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-xl border-b border-white/5 py-4 px-8 flex justify-between items-center">
+        <span class="font-bold text-xl tracking-tight">A Steinberg</span>
+        <div class="flex items-center gap-6 text-[13px] font-medium tracking-wide">
+            <a href="index.html" class="text-gray-400 hover:text-white transition uppercase">Portfolio</a>
+            <a href="about-mrkt.html" class="text-gray-400 hover:text-white transition uppercase">About MRKT</a>
+            <a href="download.html" class="btn-apple text-white px-5 py-1.5 rounded-full inline-block">Download</a>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-20 px-6 text-center">
+        <div class="max-w-xl mx-auto">
+            <div class="w-24 h-24 bg-gradient-to-tr from-blue-600 to-blue-400 rounded-[1.5rem] mx-auto mb-8 shadow-2xl flex items-center justify-center overflow-hidden">
+                <img src="logo.png" alt="MRKT Logo" class="w-16 h-16 object-contain drop-shadow-md">
+            </div>
+            <h2 class="text-4xl font-extrabold mb-2 tracking-tight">MRKT</h2>
+            <p class="text-gray-500 text-lg mb-10 italic">Built by A Steinberg</p>
+
+            <div class="apple-card rounded-[2rem] overflow-hidden p-2">
+                <div class="p-8 text-left bg-black/40">
+                    <div class="flex items-center justify-between mb-8">
+                        <span class="text-xs font-bold text-blue-500 uppercase tracking-widest bg-blue-500/10 px-3 py-1 rounded-full">macOS v1.0-Beta Latest </span>
+                        <span class="text-xs text-gray-500">Build</span>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+                         All you need for an amazing financial analysis app. Compatible with Apple Silicon & Intel(Provisional).
+                    </p>
+                    <a href="https://github.com/FlipNand/MRKT-Stock-Analyzer/releases/download/MacOS_Public_Beta/MRKT.dmg" class="btn-apple block w-full text-white font-bold py-4 rounded-xl text-center shadow-lg shadow-blue-500/20">
+                        Download Now
+                    </a>
+                </div>
+            </div>
+            
+            <a href="index.html" class="mt-12 text-gray-500 hover:text-white transition text-xs tracking-widest uppercase inline-block">Overview</a>
+        </div>
+    </main>
+
+</body>
+</html>
